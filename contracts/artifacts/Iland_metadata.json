@@ -173,7 +173,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "culatersAddress",
+				"name": "curatorsAddress",
 				"outputs": [
 					{
 						"internalType": "address",
@@ -186,7 +186,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "culatersAddressSize",
+				"name": "curatorsAddressSize",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -642,11 +642,11 @@
 			]
 		},
 		"contracts/Ilands.sol": {
-			"keccak256": "0xeba206d63263fae2785376e6afe9b95a6e08f60281a04bafc8e3c3a5544cb515",
+			"keccak256": "0xaff66ad6b05734b2421bd5c8584a625d7be92fb22116069872b55857a5c19305",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://24d65947fa018fba86aed8b5decd94ce958c89780b548b25295058208bbc7d67",
-				"dweb:/ipfs/QmS7t7CDhBGLb3i7SPJpg6ySdKHoShLi9CjDqVvW29nSVN"
+				"bzz-raw://c7849d9a3e0414b3fe3a3fa730eff0b4e04c7ea371dbb7a1cb23f07753589f2b",
+				"dweb:/ipfs/QmRgbt8s54Ns66JqvYEEM3ngSwkY6W1Qd6M8yiQoxnR2q4"
 			]
 		}
 	},

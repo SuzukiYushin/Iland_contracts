@@ -17,9 +17,9 @@ contract Iland is ERC721 {
 
     mapping(uint256 => string) public tokenParameters;
     mapping(uint256 => address) public artistsAddress;
-    mapping(uint256 => address[100]) public culatersAddress;
+    mapping(uint256 => address[100]) public curatorsAddress;
 
-    uint public culatersAddressSize = 0;
+    uint public curatorsAddressSize = 0;
 
     constructor(address multiSigWallet) ERC721("OnChainParamNFT", "OCP") {
         owner = multiSigWallet;
@@ -37,8 +37,8 @@ contract Iland is ERC721 {
 
     //2.Introduce NFT by curators
     function introduceNFT(uint256 tokenId) public {
-        culatersAddress[tokenId][culatersAddressSize] = msg.sender;
-        culatersAddressSize++;
+        curatorsAddress[tokenId][curatorsAddressSize] = msg.sender;
+        curatorsAddressSize++;
     }
 
     //3.Buy NFT and mint by consumers
@@ -48,8 +48,8 @@ contract Iland is ERC721 {
         address introducedAddress;
         uint256 amount;
 
-        for (uint i = 0; i < culatersAddressSize; i++){
-            introducedAddress = culatersAddress[tokenId][i];
+        for (uint i = 0; i < curatorsAddressSize; i++){
+            introducedAddress = curatorsAddress[tokenId][i];
             //call some web2 API using "introducedAddress"
             //responce ex
             /*
@@ -59,11 +59,11 @@ contract Iland is ERC721 {
                 '}'
             */
 
-            uint like = responsebuf[1]; //assin like value
-            uint reIntroduce = responsebuf[2]; //assin like value
+            uint like = responsebuf[0]; //assin like value
+            uint reIntroduce = responsebuf[1]; //assin reIntroduce value
 
-            amount = msg.value * like + reIntroduce / 100;
-            Address.sendValue(payable (culatersAddress[tokenId][i]) , amount);
+            amount = msg.value * (like + reIntroduce) / 100;
+            Address.sendValue(payable (curatorsAddress[tokenId][i]) , amount);
         }
 
         amount = msg.value * 30 / 100;
