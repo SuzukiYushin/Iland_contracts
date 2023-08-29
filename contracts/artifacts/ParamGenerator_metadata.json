@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "generateParameter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "parameter",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ParamGenerator.sol": "ParamGenerator"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ParamGenerator.sol": {
+			"keccak256": "0x03060a53f2a011b3dc9dbf7b951f7bf755f34018d691202420d4b64b36ef37f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a399abc0fc5f385bc8c596e4f902bf0f82f43633bbde811924282cbdd6df8d01",
+				"dweb:/ipfs/QmR9TzwLyGjJu8KUNAZJ4hKyyA1EraGj7DaqRmFcsfyFqb"
+			]
+		}
+	},
+	"version": 1
+}
