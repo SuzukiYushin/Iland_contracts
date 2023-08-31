@@ -6,13 +6,7 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "multiSigWallet",
-						"type": "address"
-					}
-				],
+				"inputs": [],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -90,6 +84,25 @@
 				],
 				"name": "Transfer",
 				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "NFTlisence",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			},
 			{
 				"inputs": [
@@ -291,6 +304,16 @@
 						"internalType": "string",
 						"name": "cid",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lisence",
+						"type": "uint256"
 					}
 				],
 				"name": "registerArtwork",
@@ -531,7 +554,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Ilands.sol": "Iland"
+			"contracts/Islands.sol": "Iland"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -641,12 +664,12 @@
 				"dweb:/ipfs/QmcEW85JRzvDkQggxiBBLVAasXWdkhEysqypj9EaB6H2g6"
 			]
 		},
-		"contracts/Ilands.sol": {
-			"keccak256": "0xaff66ad6b05734b2421bd5c8584a625d7be92fb22116069872b55857a5c19305",
+		"contracts/Islands.sol": {
+			"keccak256": "0xd1cbaf46096f9900947b47d6067c01a749f5f7fdc6ef72e3b5fac43d8d8635bb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c7849d9a3e0414b3fe3a3fa730eff0b4e04c7ea371dbb7a1cb23f07753589f2b",
-				"dweb:/ipfs/QmRgbt8s54Ns66JqvYEEM3ngSwkY6W1Qd6M8yiQoxnR2q4"
+				"bzz-raw://6124ec7e62fe9a811c4c11a1760a608050a454d9cb3dacdb4d3240217095e066",
+				"dweb:/ipfs/QmesZegvSuUKAi4ZGtYkVRjwGnqLTYW54crVLYdbBdSDVi"
 			]
 		}
 	},
